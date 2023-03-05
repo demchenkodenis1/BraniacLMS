@@ -48,6 +48,7 @@ class Courses(models.Model):
         self.save()
 
 
+
 class Lesson(models.Model):
     course = models.ForeignKey(Courses, on_delete=models.CASCADE)
     num = models.PositiveIntegerField(verbose_name="Lesson number")
